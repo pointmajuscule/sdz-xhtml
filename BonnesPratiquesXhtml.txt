@@ -1,3 +1,4 @@
+les commentaires : <!-- ici mes commentaires -->
 <p> pour les paragraphes
 <br /> revenir à la ligne
 => les balises <br /> doivent être utilisées à l'intérieur de <p> !!!
@@ -5,4 +6,128 @@
 Ce qui est très important, c'est de retenir que <h1> ne signifie pas "Times New Roman, taille 16 pt", mais "Titre important".
 Grâce à CSS, vous pourrez dire "Je veux que mes titres importants soient centrés, rouges et soulignés"
 
+mettre en valeur du texte DANS les paragraphes : un peu => <em> / beaucoup => <strong>
 
+Balises plus rares mais utiles : exposant <sup>, indice <sub>, citations courtes <q> à l'intérieur d'un paragraphe !!!, citations longues <blockquote> -> mettre un <p> à l'interieur !!!, et les acronymes : <acronym title="Société Nationale...">SNCF</acronym>
+
+Les liens
+<a href="">LIEN</a>
+Attention aux liens absolus (http://..., file://, ...) et relatifs.
+remarque : Si vous faites un lien vers un site qui comporte une adresse un peu bizarre avec des &, comme : http://www.site.com/?data=15&name=mateo21&source=ms... Vous devrez remplacer tous les & par &amp; comme ceci : http://www.site.com/?data=15&amp;name= [...] amp;source=ms. Vous ne verrez pas la différence, mais cela est nécessaire pour que votre page web respecte les normes du XHTML. *** mettre l'attribut title pour faire apparaître une infobulle
+pour envoyer un mail : href="mailto:votrenom@bidule.com"
+les ancres : mettre l'attribut id dans la balise qui sert de repere / ensuite : href="#nom_ancre" - ouvrir une page à une ancre donnée : href="page.html#mon_ancre"
+
+Les images
+Les formats : jpeg (.jpg ou .jpeg), png (8 bits ou 24 bits - utile pour la transparence) et gif - prendre l'habitude d'enregistrer le nom de l'image sans accent ni espace et en minucule (même l'extension).
+<img src="" alt="" /> => les deux attributs sont indispensables pour être conforme xhtmlw
+une bulle pour l'image : attribut title (facultatif)
+image cliquable : <a href=""><img src="" alt="" /></a>
+
+les css (Cascading Style Sheets - feuilles de style en cascade)
+3 endroits pour définir les css (dans un fichier css / dans l'en-tête / dans les balises)
+dans un fichier: entre les balises <head> - <link rel="stylesheet" media="screen" type="text/css" title="Design" href="design.css" />
+dans l'en-tête : entre les balises <head> - balise <style type="text/css"> CSS </style>
+dans les balises : attribut style="" - a eviter
+principe general
+    balise1 {
+      propriete: valeur;
+    }
+Important : Ne mettez jamais d'espace entre "18" et "px", car sinon le code CSS ne fonctionnera pas ! -> pour un exemple : font-size: 18px;
+appliquer un style à plusieurs balises : h1, h2 { ...
+Les commentairs : /* mes commentaires */
+Attributs spéciaux : fonctionnent sur toutes les balises = class et id
+class : <p class="essai">xxx</p> => dans le fichier .css : .essai { ...
+id : <p id="essai">xxx</p> => dans le fichier .css : #essai { ... => attribut unique !!!
+
+Les balises universelles
+exemple : <p>Comme l'a dit Neil Armstrong un certain 20 juillet... </p> - je veux mettre un style css sur les nom propres mais ... il n'y a pas de balise !!!
+il existe <span> (inline) et <div> (block) pour pallier ce manque.
+donc <p>Comme l'a dit <span class="nom">Neil Armstrong</span> un certain...</p>
+
+imbrications de balises
+h3 em { ... signifie modifier le style de toutes les balises <em> qui sont à l'intérieur de <h3>
+p .important { ... signifie toutes les class "important" dans les balises <p>
+
+héritage des balises : quand une balise est contenue dans une autre (exemple : <p> dans <body>) alors les propriétés de la première s'applique à la seconde.
+
+proprietes communes:
+font-size : en px, en em, xx-small, en %;
+font-family : police1, police2, police3;
+text-align : left / center / right / justify; => alignement sur les balises type "block" !
+text-indent : 30px; indentation à droite de 30 pixels
+word-spacing : en pixels
+letter-spacing : en pixels
+font-variant : small-caps / normal;
+text-transform : uppercase / lowercase / capitalize / none;
+text-decoration : underline / line-through / overline / blink / none;
+définir les couleurs : red, green / #FFFFFF / rgb(rouge,vert,bleu);
+fond :
+couleur -> background-color : black;
+fond -> background-image:url("fond.png");
+remarque : Attention lorsque vous mettez une adresse en relatif dans le fichier CSS ! L'adresse de l'image doit être indiquée par rapport au fichier .css et non pas par rapport au fichier .html.
+background-attachment : fixed / scroll;
+background-repeat: no-repeat / repeat-x / repeat-y / repeat;
+background-position: top / bottom / left / center / right;
+
+"méga propriétés" : background:...
+
+les pseudo-formats
+:hover => au passage de la souris / fonctionne sur toutes les balises
+a:active => au moment du clic
+a:focus => lorsque le lien est sélectionné
+a:visited => pour les liens qui ont déjà été vus
+p:first-letter => agit sur la première lettre
+p:first-line ==> agit sur la première ligne
+:before et :after => exemple <p class="question">Ma question<p> ensuite dans mon fichier .css : .question:before { content: "Question : ", color: blue; } et .question:after { content: " ?"; }
+remarque : Si vous appliquez le pseudo-format :first-letter à la class question, pour mettre en gras par exemple la première lettre, c'est la première lettre de "Question :" (le Q) qui sera mise en gras, et non pas la lettre qui se trouve juste après "Question :":first-letter s'appliquera donc à la première lettre du texte écrit avec le :before.
+content peut être une image : content: url("../../images/qst.gif");
+
+les listes :
+- non ordonnée : <ul> et <li>
+- ordonnée : <ol> et <li>
+- définitions : <dl> et <dt> pour les mots et <dd> pour les définitions
+
+list-style-position : inside (sans mise en retrait) / outside (par défaut, mise en retrait)
+list-style-type :
+Pour les listes non ordonnées (<ul>) :
+disc : un disque noir (par défaut).
+circle : un cercle.
+square : un carré.
+none : aucune puce ne sera utilisée.
+
+Pour les listes ordonnées (<ol>), le choix est vaste :
+decimal : des nombres 1, 2, 3, 4, 5... (par défaut)
+decimal-leading-zero : des nombres commençant par zéro (01, 02, 03, 04, 05...).
+upper-roman : numérotation romaine, en majuscules (I, II, III, IV, V...)
+lower-roman : numérotation romaine, en minuscules (i, ii, iii, iv, v...)
+upper-alpha : numérotation alphabétique, en majuscules (A, B, C, D, E...)
+lower-alpha : numérotation alphabétique, en minuscules (a, b, c, d, e...)
+lower-greek : numérotation grecque.
+
+list-style-image: url("dossier.png");
+astuce : L'image de puce peut être de n'importe quel type (PNG, GIF ou JPEG). Attention cependant, l'image ne doit pas être trop grande sinon elle sera coupée. Je vous conseille d'utiliser une taille d'environ 15x15 pixels.
+
+Utilisation des boîtes
+remarque : paragraphe (comme toutes les balises block) prend 100% de la largeur disponible par défaut.
+propriétés - width et height en px ou %
+
+le texte n'a pas assez de place, le block va s'agrandir de manière à ce que tout soit visible. Si vous voulez "couper" votre paragraphe pour qu'il soit d'une dimension exacte de 250x100, vous allez devoir utiliser la propriété CSS overflow.
+
+overflow : visible (defaut) / hidden / scroll / auto
+
+bordures :
+mega-propriete : largeur (thin / medium / thick) / couleur / type de bordure (none / solid / dotted / dashed / double / groove / ridge / inset / outset)
+border-top / border-bottom / border-left / border-right
+remarques : les bordures peuvent s'appliquer également sur les "inline" (img...)
+
+marges :
+padding : marge interieure
+margin : entre deux blocs
+margin: auto; => pour centrer le bloc MAIS
+margin:auto ne peut fonctionner que si vous avez indiqué une largeur précise pour votre block !
+
+la propriete display : block / inline permet de transformer le type d'une balise !!! Attention !
+
+la propriété float : left / right
+
+On peut aussi bien utiliser la propriété float sur des balises block que sur des balises inline, vous allez voir...
