@@ -1,0 +1,8 @@
+<p> pour les paragraphes
+<br /> revenir à la ligne
+=> les balises <br /> doivent être utilisées à l'intérieur de <p> !!!
+
+Ce qui est très important, c'est de retenir que <h1> ne signifie pas "Times New Roman, taille 16 pt", mais "Titre important".
+Grâce à CSS, vous pourrez dire "Je veux que mes titres importants soient centrés, rouges et soulignés"
+
+
