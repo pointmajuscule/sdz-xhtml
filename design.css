@@ -4,3 +4,11 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+#en_tete {
+  width: 760px;
+  height: 100px;
+  background-image: url("ma_banniere.png");
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
