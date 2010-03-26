@@ -131,3 +131,12 @@ la propriete display : block / inline permet de transformer le type d'une balise
 la propriété float : left / right
 
 On peut aussi bien utiliser la propriété float sur des balises block que sur des balises inline, vous allez voir...
+
+stopper un flottant
+propriete => clear: left / right / both
+
+positionnement absolu / relatif / fixe
+
+Une petite précision technique pour ceux qui veulent aller plus loin (les autres fermez les yeux) : si vous positionnez un block A en absolu, et qu'à l'intérieur de ce block vous positionnez un autre block B en absolu, ce positionnement-là ne se fera plus par rapport au coin en haut à gauche de la fenêtre mais par rapport au coin en haut à gauche du block A.
+
+
