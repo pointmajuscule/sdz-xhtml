@@ -1,4 +1,8 @@
-p {
-  color: blue;
-  font-size: 18px;
+p:first-letter {
+  color: white;
+  font-size: 3em;
+  float: left;
+  font-weight: bold;
+  margin-right: 5px;
+  background-color: black;
 }
