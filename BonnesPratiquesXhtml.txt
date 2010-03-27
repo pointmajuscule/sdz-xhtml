@@ -140,3 +140,13 @@ positionnement absolu / relatif / fixe
 Une petite précision technique pour ceux qui veulent aller plus loin (les autres fermez les yeux) : si vous positionnez un block A en absolu, et qu'à l'intérieur de ce block vous positionnez un autre block B en absolu, ce positionnement-là ne se fera plus par rapport au coin en haut à gauche de la fenêtre mais par rapport au coin en haut à gauche du block A.
 
 utilisation des "alternate stylesheet"
+
+Les tableaux
+<table> -> balise block pour déclarer un tableau
+<tr> -> la ligne
+<td> -> la cellule
+propriété CSS spécifique aux tableaux (donc dans la balise table): border-collapse, qui signifie "coller les bordures entre elles" => border-collapse: collapse / separate (après avoir mis border sur <td> !!!)
+<th> -> les en-têtes de colonne
+<caption> -> mettre un titre au tableau
+pour les gros tableaux : diviser le tableau en trois parties. Attention il faut déclarer dans l'ordre <thead>, <tfoot> et <tbody> - organisation pas obligatoire
+Les fusions de cellule :

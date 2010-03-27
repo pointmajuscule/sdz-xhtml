@@ -5,6 +5,14 @@ body {
   margin-bottom: 20px;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
+}
+
 /* l en-tête */
 #en_tete {
   width: 760px;
