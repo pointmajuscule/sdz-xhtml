@@ -46,3 +46,13 @@ body {
   background-color: #B3B3B3;
   color: black;
 }
+
+/* le corps */
+#corps {
+  margin-left: 140px;
+  margin-bottom: 20px;
+  padding: 5px;
+  color: #B3B3B3;
+  background-color: #626262;
+  border: 2px solid black;
+}
