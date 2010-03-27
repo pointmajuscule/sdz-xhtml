@@ -61,8 +61,14 @@
         <td>Pas assez violent...</td>
       </tr>
     </table>
-    <form>
+    <form method="post" action="traitement.php">
       <p>Texte à l interieur du formulaire</p>
+      <p>
+        <label for="pseudo">Votre pseudo</label> : <input type="text" name="pseudo" id="pseudo" value="Fabien" size="15" maxlength="10" />
+        <br />
+        <label for="pass">Votre mot de passe :</label>
+        <input type="password" name="pass" id="pass" />
+      </p>
     </form>
   </div>
 

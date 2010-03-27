@@ -161,3 +161,14 @@ On peut centrer le texte à l'intérieur des cellules (text-align:center), modif
 Proprietés propres aux tableaux :
 - caption-side : top / bottom / left / right
 - vertical-align : top / middle / bottom
+
+Les Formulaires
+<form method="post | get" action="">
+zone de texte à une ligne : <input type="text" name="">
+lier un label avec une zone : <label for="id dans le champ texte">
+valeur par défaut : attribut "value"
+size et maxlength => attribut en nombre de lettres
+
+zone de mot de passe : <input type="password" />
+zone de texte multiligne : <textarea>
+
