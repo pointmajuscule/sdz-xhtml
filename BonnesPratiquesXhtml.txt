@@ -172,3 +172,6 @@ size et maxlength => attribut en nombre de lettres
 zone de mot de passe : <input type="password" />
 zone de texte multiligne : <textarea>
 
+les options :
+cases à cocher : <input type="checkbox" name="choix" />
+
