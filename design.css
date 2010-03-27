@@ -12,6 +12,12 @@ body {
   background-image: url("ma_banniere.png");
   background-repeat: no-repeat;
   margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+#en_tete h1 {
+  text-align: center;
+  color: blue;
 }
 
 /* Le menu */
