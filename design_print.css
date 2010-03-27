@@ -1,0 +1,74 @@
+body {
+  width: 760px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* l en-tête */
+#en_tete {
+  width: 760px;
+  height: 100px;
+  background-image: url("ma_banniere.png");
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+#en_tete h1 {
+  text-align: center;
+  color: red;
+}
+
+/* Le menu */
+#menu {
+  float: left;
+  width: 120px;
+}
+
+.element_menu {
+  background-color: yellow;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.element_menu h3 {
+  text-align: center;
+  font-family: Arial, "Arial Black", "Times New Roman", Times, serif;
+}
+
+.element_menu ul {
+  padding: 0px;
+  padding-left: 20px;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.element_menu a {
+  color: #B3B3B3;
+}
+
+.element_menu a:hover {
+  background-color: #B3B3B3;
+  color: black;
+}
+
+/* le corps */
+#corps {
+  margin-left: 140px;
+  margin-bottom: 20px;
+  padding: 5px;
+  color: #B3B3B3;
+  background-color: #626262;
+  border: 2px solid black;
+}
+
+/* le pied de page */
+#pied_de_page {
+  padding: 5px;
+  clear: both;
+  text-align: center;
+  color: #B3B3B3;
+  background-color: #626262;
+  border: 2px solid black;
+}
