@@ -203,3 +203,6 @@ Et le bouton pour valider le formulaire
 <input type="submit" /> => envoi du formulaire
 <input type="reset /> => remise à zéro
 <input type="button" /> => bouton générique pour application (par exemple) de javascript
+
+Et en vrac:
+<hr /> : création d'une ligne horizontale de séparation de page
