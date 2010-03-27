@@ -149,4 +149,4 @@ propriété CSS spécifique aux tableaux (donc dans la balise table): border-col
 <th> -> les en-têtes de colonne
 <caption> -> mettre un titre au tableau
 pour les gros tableaux : diviser le tableau en trois parties. Attention il faut déclarer dans l'ordre <thead>, <tfoot> et <tbody> - organisation pas obligatoire
-Les fusions de cellule :
+Les fusions de cellule : les attributs colspan et rowspan
