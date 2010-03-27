@@ -150,3 +150,14 @@ propriété CSS spécifique aux tableaux (donc dans la balise table): border-col
 <caption> -> mettre un titre au tableau
 pour les gros tableaux : diviser le tableau en trois parties. Attention il faut déclarer dans l'ordre <thead>, <tfoot> et <tbody> - organisation pas obligatoire
 Les fusions de cellule : les attributs colspan et rowspan
+
+la mise en forme
+Pour modifier la bordure des cellules, il suffit d'utiliser border.
+Pour modifier la couleur de fond d'une cellule, on utilisera background-color.
+Pour modifier l'image de fond d'une cellule, on utilisera background-image
+Mais on peut aussi modifier la taille (font-size) et la police (font-family) du texte des cellules d'en-tête, en appliquant les propriétés adaptées aux balises <th>
+On peut aussi agrandir le tableau tout entier (width), le centrer (margin:auto car le tableau est un block).
+On peut centrer le texte à l'intérieur des cellules (text-align:center), modifier les marges intérieures des cellules (padding) pour aérer le tableau.
+Proprietés propres aux tableaux :
+- caption-side : top / bottom / left / right
+- vertical-align : top / middle / bottom
