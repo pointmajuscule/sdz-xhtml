@@ -56,3 +56,13 @@ body {
   background-color: #626262;
   border: 2px solid black;
 }
+
+/* le pied de page */
+#pied_de_page {
+  padding: 5px;
+  clear: both;
+  text-align: center;
+  color: #B3B3B3;
+  background-color: #626262;
+  border: 2px solid black;
+}
