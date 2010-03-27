@@ -180,3 +180,26 @@ checked="checked pour cocher une case par défaut ou un bouton
 les listes déroulantes: <select> et <option value=""> pour les éléments de la liste
 selected="selected" pour selectionner un élément par défaut
 <optgroup label=""> pour créer des groupes d'options
+
+Accessibilité et design du formulaire
+  Définir un ordre de tabulation (accessibilité)
+    attribut "tabindex" avec un nombre (compter de 10 en 10 est une bonne pratique car cela permet d'insèrer un champ si nécessaire pour l'ordre)
+  Définir des touches de raccourci (accessibilité)
+    attribut "accesskey"
+    Le gros problème des touches de raccourci est que certains caractères sont déjà utilisés par le navigateur. Si vous utilisez les mêmes, il y aura un conflit et vos visiteurs ne pourront plus utiliser les raccourcis auxquels ils sont habitués.
+    L'idéal est d'utiliser des chiffres en raccourci, ils sont en général très peu utilisés par les navigateurs.
+  Organiser le formulaire en plusieurs zones (accessibilité et design)
+    balise <fieldset> pour définir un ensemble et <legend> pour lui donner un nom
+    A l'intérieur des <fieldset></fieldset>, l'utilisation de balises de paragraphe <p></p> n'est plus obligatoire.
+  Rajouter du CSS (design)
+
+Astuce : changer le fond du champ quand il est sélectionné
+input:focus, textarea:focus /* Quand le curseur est sur un champ */
+{
+     background-color: #FFFF99;
+}
+
+Et le bouton pour valider le formulaire
+<input type="submit" /> => envoi du formulaire
+<input type="reset /> => remise à zéro
+<input type="button" /> => bouton générique pour application (par exemple) de javascript
