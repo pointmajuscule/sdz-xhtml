@@ -5,10 +5,44 @@ body {
   margin-bottom: 20px;
 }
 
+/* l en-tête */
 #en_tete {
   width: 760px;
   height: 100px;
   background-image: url("ma_banniere.png");
   background-repeat: no-repeat;
   margin-bottom: 10px;
+}
+
+/* Le menu */
+#menu {
+  float: left;
+  width: 120px;
+}
+
+.element_menu {
+  background-color: #626262;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.element_menu h3 {
+  text-align: center;
+  font-family: Arial, "Arial Black", "Times New Roman", Times, serif;
+}
+
+.element_menu ul {
+  padding: 0px;
+  padding-left: 20px;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.element_menu a {
+  color: #B3B3B3;
+}
+
+.element_menu a:hover {
+  background-color: #B3B3B3;
+  color: black;
 }
