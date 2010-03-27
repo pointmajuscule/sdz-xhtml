@@ -176,3 +176,7 @@ les options :
 cases à cocher : <input type="checkbox" name="choix" />
 boutons : <input type="radio" name="bouton" />
 checked="checked pour cocher une case par défaut ou un bouton
+
+les listes déroulantes: <select> et <option value=""> pour les éléments de la liste
+selected="selected" pour selectionner un élément par défaut
+<optgroup label=""> pour créer des groupes d'options
