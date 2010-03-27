@@ -139,4 +139,4 @@ positionnement absolu / relatif / fixe
 
 Une petite précision technique pour ceux qui veulent aller plus loin (les autres fermez les yeux) : si vous positionnez un block A en absolu, et qu'à l'intérieur de ce block vous positionnez un autre block B en absolu, ce positionnement-là ne se fera plus par rapport au coin en haut à gauche de la fenêtre mais par rapport au coin en haut à gauche du block A.
 
-
+utilisation des "alternate stylesheet"
